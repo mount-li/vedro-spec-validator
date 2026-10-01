@@ -549,7 +549,7 @@ class TestGetPreparedSpecUnits(unittest.TestCase):
         mock_validate_cache.assert_called_once_with(spec_link)
         mock_download_spec.assert_called_once()
         mock_parse_spec.assert_called_once_with(mock_response)
-        mock_save_cache.assert_called_once_with(spec_link=spec_link, raw_schema=raw_spec)
+        mock_save_cache.assert_called_once_with(spec_link=spec_link, obj=raw_spec)
         mock_get_schema.assert_called_once_with(raw_spec)
         mock_build_dict.assert_called_once_with(schema_data)
     
