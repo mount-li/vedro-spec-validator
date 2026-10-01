@@ -9,7 +9,7 @@ def find_required():
 
 
 setup(
-    name="vedro-spec-validator",
+    name="vedro-spec-validator-beta",
     version=__version__,
     description="Vedro Spec Validator plugin",
     long_description=open("README.md").read(),
